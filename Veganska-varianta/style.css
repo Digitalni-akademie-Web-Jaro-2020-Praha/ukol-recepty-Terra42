@@ -26,8 +26,6 @@ body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   color: white;
-  font-size: 14px;
-  font-weight: 400;
 }
 
 .paticka {
@@ -49,36 +47,54 @@ h1,
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .main_recipe {
-  background-image: url(images/salat.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/salat.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .background_1 {
-  background-image: url(images/chlebicek.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/chlebicek.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .background_2 {
-  background-image: url(images/tacos.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/tacos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .background_3 {
-  background-image: url(images/cizrna.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/cizrna.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .background_4 {
-  background-image: url(images/burger.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/burger.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 /*mobily: */
@@ -92,17 +108,82 @@ h2 {
 
 .main_recipe {
   min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .small_recipe {
   min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.padding {
   padding: 10px;
+  border: 1px solid whitesmoke;
 }
 
 /*tablety: */
 @media screen and (min-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main_recipe {
+    min-height: 250px;
+    width: 100%;
+  }
+
+  .small_recipe {
+    min-height: 150px;
+    width: 50%;
+  }
+
+  .padding {
+    padding: 20px;
+  }
 }
 
 /*notebook/pc: */
 @media screen and (min-width: 860px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .main_page {
+    display: flex;
+  }
+
+  .container {
+    width: 66%;
+  }
+
+  .main_recipe {
+    min-height: 400px;
+    width: 33%;
+  }
+
+  .small_recipe {
+    min-height: 200px;
+  }
 }
