@@ -1,7 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
@@ -17,24 +22,87 @@ notebook/pc:
 }
 */
 
-
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .paticka {
-    text-align: center;
-    font-size: 14px;
-    color: silver;
+  text-align: center;
+  font-size: 14px;
+  color: silver;
 }
 
 .paticka a {
-    color: silver;
+  color: silver;
 }
-
 
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+/* obecne styly */
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+.main_recipe {
+  background-image: url(images/salat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background_1 {
+  background-image: url(images/chlebicek.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background_2 {
+  background-image: url(images/tacos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background_3 {
+  background-image: url(images/cizrna.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background_4 {
+  background-image: url(images/burger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*mobily: */
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.main_recipe {
+  min-height: 200px;
+}
+
+.small_recipe {
+  min-height: 90px;
+  padding: 10px;
+}
+
+/*tablety: */
+@media screen and (min-width: 480px) {
+}
+
+/*notebook/pc: */
+@media screen and (min-width: 860px) {
+}
